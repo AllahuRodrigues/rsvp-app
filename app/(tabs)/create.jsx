@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { router } from "expo-router";
-import { Video } from "expo-video";
+import { ResizeMode, Video } from "expo-av";
 import * as DocumentPicker from "expo-document-picker";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
@@ -110,13 +110,12 @@ const Create = () => {
           <TouchableOpacity onPress={() => openPicker("video")}>
             {form.video ? (
               <Video
-              source={{ uri: form.video.uri }}
-              className="w-full h-64 rounded-2xl"
-              useNativeControls
-              resizeMode="cover"  // Pass the resize mode as a string
-              isLooping
-            />
-            
+                source={{ uri: form.video.uri }}
+                className="w-full h-64 rounded-2xl"
+                useNativeControls
+                resizeMode={ResizeMode.COVER}
+                isLooping
+              />
             ) : (
               <View className="w-full h-40 px-4 bg-black-100 rounded-2xl border border-black-200 flex justify-center items-center">
                 <View className="w-14 h-14 border border-dashed border-secondary-100 flex justify-center items-center">

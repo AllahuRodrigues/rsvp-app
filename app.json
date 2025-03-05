@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "RSVP",
-    "slug": "RSVP",
+    "name": "rsvp",
+    "slug": "rsvp",
     "version": "1.0.0",
     "newArchEnabled": true,
     "orientation": "portrait",
@@ -12,7 +12,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "scheme": "RSVP",
+    "scheme": "rsvp",
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -40,14 +40,15 @@
         "origin": false
       },
       "eas": {
-        "projectId": "c2f1bd7f-747d-4bdd-8407-424cbedced7f"
+        "projectId": "cbbaaf6b-9909-4cb2-9a48-10d90ef6b39b"
       }
     },
     "runtimeVersion": {
       "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/c2f1bd7f-747d-4bdd-8407-424cbedced7f"
-    }
+      "url": "https://u.expo.dev/cbbaaf6b-9909-4cb2-9a48-10d90ef6b39b"
+    },
+    "owner": "allahurodrigues"
   }
 }
